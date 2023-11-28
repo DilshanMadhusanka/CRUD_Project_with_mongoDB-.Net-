@@ -3,7 +3,10 @@ using MongoDB.Bson; // these two namespaces related with mongoDB
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace CRUD_Project_with_mongoDB.Model
-{ public class Student
+{ 
+
+    [BsonIgnorExtraElements]  // data base eken apita oni data tika witharak ganna. 
+    public class Student
     {
 
 
